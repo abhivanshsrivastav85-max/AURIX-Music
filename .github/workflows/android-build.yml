@@ -17,18 +17,19 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'gradle'
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Grant Execute Permission to Gradlew
+      - name: Make gradlew executable
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+        run: ./gradlew :app:assembleUniversalFossDebug -x lint -x test --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: AURIX-Music-APK
-          path: app/build/outputs/apk/**/*.apk
+          name: AURIX-Music-Debug-APK
+          path: app/build/outputs/apk/**/app-*.apk
