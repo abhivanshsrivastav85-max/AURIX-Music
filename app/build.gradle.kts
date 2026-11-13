@@ -25,12 +25,12 @@ if (hasGoogleServicesConfig) {
 }
 
 android {
-  namespace = "echo.music.iad1tya"
+  namespace = "com.aurix.music"
   compileSdk = 37
   ndkVersion = "28.2.13676358"
 
   defaultConfig {
-    applicationId = "echo.music.iad1tya"
+    applicationId = "com.aurix.music"
     minSdk = 26
     targetSdk = 36
     versionCode = 167
