@@ -25,12 +25,11 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleUniversalFossDebug -x lint -x test -x detekt --no-daemon
+        run: ./gradlew assembleUniversalFossDebug -x test --no-daemon
 
       - name: Upload APK
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: AURIX-Music-Debug-APK
-          path: |
-            **/build/outputs/apk/**/*.apk
+          path: app/build/outputs/apk/**/*.apk
+
