@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1086135896818",
+    "project_id": "aurix-music-f9b69",
+    "storage_bucket": "aurix-music-f9b69.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086135896818:android:a844d5ff91d5de39d7de6b",
+        "android_client_info": {
+          "package_name": "com.aurix.music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQHIR6jVX-j18RtlKRJ3xiL8b-5fINDtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
